@@ -43,22 +43,22 @@ export default function Movies() {
     if (!searchMovie.trim()) return;
 
     setLoading(true)
-    setError('')
     setMovies([])
     setMovieType('Search')
+    setError('')
 
     try {
       const response = await fetch(`https://www.omdbapi.com/?apikey=521d81bc&s=${encodeURIComponent(searchMovie)}`);
       let data = await response.json()
       console.log(data)
 
-      if (data.response === 'False') {
+      if (data.Response === 'False') {
         setError(data.Error)
       }
       setMovies(data.Search)
     }
     catch (error) {
-      setError("something went wrong, please try again", error)
+      setError("something went wrong, please try again")
       console.error(error)
     }
     finally {
