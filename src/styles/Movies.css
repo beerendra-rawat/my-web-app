@@ -1,0 +1,79 @@
+.movie-main-div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.movie-title {
+    color: #4f46e5;
+}
+
+.second-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.movie-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16;
+    border: 1px solid #4f46e5;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.movie-btn {
+    padding: 10px 16px;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.movie-btn:hover {
+    background-color: #3730a3;
+}
+
+.movie-card {
+    width: 250px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.movie-year {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.container{
+    height: 90vh;
+}

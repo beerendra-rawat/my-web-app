@@ -1,0 +1,33 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Font */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #e0e0e0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+/* THEME CLASSES (for useContext theme) */
+.light {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+
